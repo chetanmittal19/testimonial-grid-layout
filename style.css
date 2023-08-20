@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    background-color: hsl(210, 46%, 95%);
+    color: white;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+h2{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.flex{
+    display: flex;
+}
+
+.row-2 {
+    grid-row: span 2;
+}
+
+.col-2 {
+    grid-column: span 2;
+}
+
+.details{
+    gap: 10px;
+}
+
+img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    
+    border: 2px solid white;
+}
+
+.box{
+    height: 80%;
+    flex-basis: 70%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+    row-gap: 30px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px hsl(217, 19%, 35%);
+    justify-content: space-evenly;
+
+}
+
+.role{
+    font-size: 0.7rem;
+}
+
+/* media-queries */
+@media screen and (max-width: 800px){
+    .card{
+        grid-row: span 1;
+        grid-column: span 2;
+        justify-content: flex-start;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .container{
+        flex-direction: column;
+    }
+    
+    .box{
+        width: 100%;
+        padding: 20px;
+    }
+
+    .card{
+        grid-row: span 1;
+        grid-column: span 4;
+    }
+} 
