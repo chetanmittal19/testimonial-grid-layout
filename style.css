@@ -54,7 +54,7 @@ img{
 /* box and cards */
 
 .box{
-    height: 80%;
+    height: 70%;
     flex-basis: 70%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
